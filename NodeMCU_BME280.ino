@@ -41,8 +41,8 @@ www.embeddedadventures.com
 
 void setup() 
 {
-  Wire.begin(4,5);
-  Serial.begin(9600);
+  Wire.begin(4,5); //SDA -> pin D2 , SCL -> pin D1
+  Serial.begin(115200);
 
   // need to read the compensation parameters
   BME280.readCompensationParams();
